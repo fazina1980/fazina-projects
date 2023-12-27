@@ -1,0 +1,11 @@
+.outer
+{
+    box-sizing: border-box;
+    background-color: bisque;
+}
+.outer
+{
+    border: 2px solid green;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
