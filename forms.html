@@ -4,37 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Chaitanya_Techno.jpg" class="jpg" alt="chaitanya techno"
-    i
-
-
+    <img src="https://admissions.cmcvellore.ac.in/App_Themes/Admission/images/header.jpg" alt="";>
+    <style>
+        body
+        {
+            background-color: beige;
+        }
+        table,th,td
+        {
+            border: 3px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1> Applicaton Form</h1>
+    <h1>Online Medical Appointment Form:</h1>
     <form action="main.py" method="post">
-        <label for="name">Full Name of Applicant</label><br><br>
-        <table width="50%">
+        <p><strong>Prefix*:</strong></p>
+        <select name="gender" id="mr">
+            <option value="">Mr</option>
+            <option value="male">Mr</option>
+            <option value="female">Mrs</option>
+        </select>
+        <p><strong>Your Name*:</strong></p>
         <label for="name">First Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your first name"><br><br>
-        <label for="name">Last Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your last name"><br><br>
-        <label for="em">Email:</label>
-        <input type="text" name="email" id="em" placeholder="Enter your email"><br><br>
-        <label for="pwd">Password:</label>
-        <input type="password" name="password" id="pwd" placeholder="Enter your password"><br><br>
+        <input type="text" name="name" id="name" placeholder="First name">
+        <input type="text" name="name" id="name" placeholder="Last name"><br><br>
+        <p><strong>Birth Date*:</strong></p>
+        <input type="date" name="date" id="dob"><br><br>
+        Is your first time visit:
+        <input type="radio" name="visit" id="yes" >
+        <label for="yes">Yes</label>
+        <input type="radio" name="visit" id="no">
+        <label for="no">No</label><br><br>
+        Name the Doctor you want to visit*: <br><br>
+        
+        <input type="text" name="name" id="name" placeholder="First Name">
+        <input type="text" name="name" id="name" placeholder="Last Name"><br><br>
+        Do you have any of the below:
+        <table width="70%">
+            <tr>
+                <th width="40%">Symptoms</th>
+                <th>Yes</th>
+                <th>No</th>
+            </tr>
+            <tr>
+                <th>Fever 38 or greater:</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <th>Vomiting:</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <th>Cough</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <th>Have you been discharged from hospital in the last 14 days?</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <th>Contact with a person diagnosed positive with communicable disease in last 14 days?</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <th>Do you suffer from shortness of breath or chest discomfort?</th>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+        </table>
+        Main reason for medical visit request today: <br><br>
+        <input type="text" name="reason" placeholder="Enter reason">  <br><br>  
+        <input type="text" name="suggession" placeholder="give any suggestions--"><br><br>
         <label for="phno">Phone Number:</label>
         <input type="number" name="number" id="phno" placeholder="Enter your number"><br><br>
-        <label for="dob">DOB:</label>
-        <input type="date" name="date" id="dob"><br><br>
-        <label for="sign">Signature</label>
-        <input type="file" name="file" id="sign"><br><br>
-        Enter Gender:
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="fem">
-        <label for="fem">Female</label><br><br>
-        <label for="pgn">Parent/Guardian Name:</label>
-        <input type="text" id="pgn" name="name"><br><br>
         <button type="Submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
