@@ -87,7 +87,7 @@ section .main
     top: 150px;
     position: relative;
 }
-section .main .men_text h1
+section .main .main_text h1
 {
     position: relative;
     font-size: 60px;
@@ -96,7 +96,7 @@ section .main .men_text h1
     color: green;
 
 }
-section .main .men_text h1 span
+section .main .main_text h1 span
 {
     font-size: 60px;
     font-family: mv boli;
@@ -560,7 +560,7 @@ about
 .order
 {
     width: 100%;
-    height: 200vh;
+    height: 150vh;
 }
 .order h1
 {
