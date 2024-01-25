@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <button onclick="change()">Click</button>
+    <div class="container">
+        <div class="content">
+            <p id="colors">Lorem ipsum dolor, sit amet consectetur adipisicing
+             elit. Repudiandae delectus voluptatum excepturi aliquam
+             sit unde, facere voluptates, eos eligendi eum quis repre
+             henderit, sequi rem soluta nostrum perspiciatis beatae
+              commodi perferendis?Lorem ipsum dolor sit amet consectetur
+               adipisicing elit. Eum explicabo officia hic in at aut rerum
+                quasi.</p>
+            <button onclick="refresh()">WELCOME</button>
+        </div>
+        <div id="colors">
+            <button style="background-color: red;" onclick="red()">RED</button>
+            <button style="background-color: green;" onclick="green()">GREEN</button>
+            <button style="background-color: orange;" onclick="orange()">ORANGE</button>
+            <button style="background-color: purple;" onclick="purple()">PURPLE</button>
+
+        </div>
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
