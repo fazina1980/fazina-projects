@@ -1,0 +1,56 @@
+*
+{
+    font-family: sans-serif;
+}
+body
+{
+    background-color: bisque;
+}
+.container
+{
+    margin: 22px;
+    margin-left: 30%;
+    background-color: skyblue;
+    width: 600px;
+    border-radius: 10px;
+    
+}
+.qns
+{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    height: 55px;
+    padding-bottom: 10px;
+}
+.hide
+{
+    display: none;
+
+}
+button
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    margin-left: 150px;
+
+}
+.ans
+{
+    background-color: honeydew;
+    margin-top: -11px;
+}
+.ans p
+{
+    margin-left: 6px;
+    padding: 15px;
+    display: none;
+
+}
+.active p
+{
+    display: block;
+}
